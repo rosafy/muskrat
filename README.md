@@ -2,7 +2,7 @@ Quick script to automatically fill out the [Heritage Foundation's new propaganda
 
 Using [Navchandar's Python-Random-Name-Generator](https://github.com/navchandar/Python-Random-Name-Generator), which is licensed under the [GNU-GPL License](https://github.com/navchandar/Python-Random-Name-Generator/blob/master/LICENSE)
 
-## Dependencies:
+## Dependencies (Seperate installation not required for [exe-release](https://github.com/rosafy/muskrat/releases/tag/main)):
 - [Python 3.11.9](https://www.python.org/)
 - [Selenium](https://pypi.org/project/selenium/)
 
