@@ -5,5 +5,6 @@ Using [Navchandar's Python-Random-Name-Generator](https://github.com/navchandar/
 ## Dependencies (Seperate installation not required for [prebuilt-release](https://github.com/rosafy/muskrat/releases/tag/main)):
 - [Python 3.11.9](https://www.python.org/)
 - [Selenium](https://pypi.org/project/selenium/)
+- Browser (can be chosen on line 15 of muskrat.py, default is [Firefox](https://www.mozilla.org/en-US/firefox/new/)
 
 © 2025 Rosafy - MIT License
