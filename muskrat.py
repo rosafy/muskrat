@@ -47,12 +47,14 @@ def formfill():
     lastname = random_names.Last()
     emailformat = random.choice(emailformats)
     emailprovider = random.choice(emailproviders)
+    firstnameprocessed = "".join(char for char in firstname if char.isalnum() or char == ".").replace("hit", "sample")
+    lastnameprocessed = "".join(char for char in lastname if char.isalnum() or char == ".").replace("hit", "sample")
     if emailformat == "fn.ln":
-        email = f"{firstname.lower()}.{lastname.lower()}@{emailprovider}"
+        email = f"{firstnameprocessed.lower()}.{lastnameprocessed.lower()}@{emailprovider}"
     elif emailformat == "ln.fn":
-        email = f"{lastname.lower()}.{firstname.lower()}@{emailprovider}"
+        email = f"{lastnameprocessed.lower()}.{firstnameprocessed.lower()}@{emailprovider}"
     elif emailformat == "fnln":
-        email = f"{firstname.lower()}{lastname.lower()}@{emailprovider}"
+        email = f"{firstnameprocessed.lower()}{lastnameprocessed.lower()}@{emailprovider}"
     else:
         email = f"{firstname.lower()[0]}{lastname.lower()}@{emailprovider}"
     firstnamefield.send_keys(firstname)
