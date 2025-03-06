@@ -7,4 +7,4 @@ Using [Navchandar's Python-Random-Name-Generator](https://github.com/navchandar/
 - [Selenium](https://pypi.org/project/selenium/)
 - Browser (can be chosen on init)
 
-© 2025 Rosafy - GNU GPL
+© 2025 Rosafy - GNU GPL v3.0
