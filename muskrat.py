@@ -66,8 +66,14 @@ def formfill(browser):
     lastnamefield.send_keys(lastname)
     emailfield.send_keys(email)
     submitbutton = driver.find_element(By.ID,"lp-pom-button-122")
-    submitbutton.click()
-    wait(driver, 15).until_not(EC.title_is(title))
+    while driver.title == title:
+        try:
+            submitbutton.click()
+        except:
+            if datetime.now().second > starttime + 60:
+                break
+            else:
+                continue
     driver.close()
 browser = input("Enter number to select browser to use (1: Firefox, 2: Chrome): ")
 browser = int(browser)
